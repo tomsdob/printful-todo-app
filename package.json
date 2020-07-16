@@ -1,0 +1,14 @@
+{
+  "name": "printful-todo-app",
+  "version": "1.0.0",
+  "description": "To do app for Printful summer school test.",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.5.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1"
+  }
+}
