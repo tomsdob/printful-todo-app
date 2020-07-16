@@ -4,11 +4,11 @@ Route::set('index.php', function() {
     HomepageController::View('Homepage');
 });
 
-Route::set('add', function() {
+Route::set('task/add', function() {
     TasksController::View('TaskAdd');
 });
 
-Route::set('edit', function() {
+Route::set('task/edit', function() {
     TasksController::View('TaskEdit');
 });
 
