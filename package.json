@@ -1,0 +1,27 @@
+{
+  "name": "printful-todo-app",
+  "version": "1.0.0",
+  "description": "To-do list app made for the Printful summer school test.",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "tailwindcss": "^1.5.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1"
+  },
+  "scripts": {
+    "dev": "php -S localhost:8000",
+    "build:css": "npx tailwindcss build resources/css/tailwind.css -o resources/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomsdob/printful-todo-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomsdob/printful-todo-app/issues"
+  },
+  "homepage": "https://github.com/tomsdob/printful-todo-app#readme"
+}
