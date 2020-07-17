@@ -1,11 +1,7 @@
 <?php
 
-// Require the bootstrap App class and initiate it
-require_once('app/Core/App.php');
-new App;
-
 // Defines the root directory
-define('ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR);
+define('ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR . 'printful-todo-app' . DIRECTORY_SEPARATOR);
 
 // Defines the app directory where the folders Controllers, Core, Data, Models are
 define('APP', ROOT . 'app' . DIRECTORY_SEPARATOR);
@@ -27,3 +23,6 @@ set_include_path(get_include_path() . PATH_SEPARATOR . implode(PATH_SEPARATOR, $
 
 spl_autoload_register('spl_autoload', false);
 
+// Require the bootstrap App class and initiate it
+require_once('app/Core/App.php');
+new App;
