@@ -13,7 +13,16 @@
     <h2 class="mb-3 text-xl font-semibold text-gray-700 leading-tight text-center">Labot - <?= $title ?></h2>
     <form method="POST" class="space-y-4 flex flex-col justify-start items-start">
         <div class="w-full">
+            <!-- Outputs an error alert if there are any errors -->
+            <!-- Izvada kļūdas paziņojumu, ja ir kāda kļūda -->
+            <?php if (isset($error)) { ?>
+                <div class="mb-3 p-2 w-full bg-red-500 rounded-lg text-sm font-normal text-white leading-tighter text-left">
+                    <p><?= $error ?></p>
+                </div>
+            <?php } ?>
             <label for="title" class="mb-2 block text-base font-semibold text-gray-900 leading-tight text-left">Virsraksts</label>
+            <!-- Setting the task id title as a value for the below input -->
+            <!-- Ieliek lietas id virsrakstu kā vērtību zemāk esošajam input laukam -->
             <input
                 type="text"
                 name="title"
@@ -26,6 +35,8 @@
         </div>
         <div class="w-full">
             <label for="description" class="mb-2 block text-base font-semibold text-gray-900 leading-tight text-left">Apraksts</label>
+            <!-- Setting the task id description as the text for the below textarea -->
+            <!-- Ieliek lietas id aprakstu kā tekstu zemāk esošajam textarea -->
             <textarea
                 type="text"
                 name="description"
@@ -35,28 +46,31 @@
             ><?= $description ?></textarea>
         </div>
         <div class="inline-flex justify-between items-center w-full">
-            <!-- Delete case of tasks -->
+            <!-- Go back -->
+            <!-- Doties atpakaļ poga -->
             <a
                 href="/"
-                class="p-2 inline-flex items-center text-sm font-semibold text-white leading-tight bg-gray-500 hover:bg-gray-600 rounded-lg transition-all duration-200 transform hover:-translate-y-px hover:shadow-lg"
+                class="p-2 inline-flex items-center text-sm font-semibold text-white leading-tight bg-gray-500 hover:bg-gray-600 rounded-lg transition-all duration-200 transform hover:-translate-y-px hover:shadow-lg focus:outline-none focus:shadow-outline"
             >
                 <svg class="mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
                 <span>Doties atpakaļ</span>
             </a>
             <div class="space-x-2 inline-flex justify-end items-center">
                 <!-- Delete case of tasks -->
+                <!-- Dzēst lietu gadījums -->
                 <a
                     href="index.php?controller=tasks&action=delete&id=<?= $id ?>"
-                    class="p-2 inline-flex items-center text-sm font-semibold text-white leading-tight bg-red-500 hover:bg-red-600 rounded-lg transition-all duration-200 transform hover:-translate-y-px hover:shadow-lg"
+                    class="p-2 inline-flex items-center text-sm font-semibold text-white leading-tight bg-red-500 hover:bg-red-600 rounded-lg transition-all duration-200 transform hover:-translate-y-px hover:shadow-lg focus:outline-none focus:shadow-outline"
                 >
                     <svg class="mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
                     <span>Dzēst</span>
                 </a>
                 <!-- Submit the form and edit the task -->
+                <!-- Iesniedz formu un labo to -->
                 <button
                     type="submit"
                     name="submit"
-                    class="p-2 inline-flex items-center text-sm font-semibold text-white leading-tight bg-green-500 hover:bg-green-600 rounded-lg transition-all duration-200 transform hover:-translate-y-px hover:shadow-lg"
+                    class="p-2 inline-flex items-center text-sm font-semibold text-white leading-tight bg-green-500 hover:bg-green-600 rounded-lg transition-all duration-200 transform hover:-translate-y-px hover:shadow-lg focus:outline-none focus:shadow-outline"
                 >
                     <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                     <span>Saglabāt</span>

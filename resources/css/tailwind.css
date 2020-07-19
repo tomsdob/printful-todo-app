@@ -1,3 +1,6 @@
+/* Fetches the TailwindCSS components that will later be compiled into style.css */
+/* Iegūst TailwindCSS komponentes, kas vēlāk tiek kompilētas style.css */
+
 @tailwind base;
 
 @tailwind components;

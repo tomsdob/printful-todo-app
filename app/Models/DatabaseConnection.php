@@ -1,8 +1,10 @@
 <?php
 
+// Requires the Database Configuration Model
+// Iegūst Database Configration Modeli
 require_once 'DatabaseConfig.php';
 
-class Crud extends DatabaseConfig
+class DatabaseConnection extends DatabaseConfig
 {
     public function __construct()
     {
@@ -10,6 +12,7 @@ class Crud extends DatabaseConfig
     }
 
     // Fetches the database data
+    // Iegūst datubāzes datus
     public function getData($sql){
         $stmt = $this->connect->prepare($sql);
         $stmt->execute();
@@ -17,6 +20,7 @@ class Crud extends DatabaseConfig
     }
 
     // Connects to the database
+    // Savienojas ar datubāzi
     public function action($sql){
         $this->connect->exec($sql);
     }
