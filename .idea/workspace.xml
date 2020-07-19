@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0c95a61-a0b8-43c3-81af-b12b90f8a010" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="2c930068-ec66-4c5b-b238-7bd5b8baeb98" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/printful-todo-app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1etfcRaY1m2Y9d128SX7wTBOtY6" />
+  <component name="ProjectId" id="1eth2YTuhnRQ4Ood2A31xP7DpOb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,16 +38,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a0c95a61-a0b8-43c3-81af-b12b90f8a010" name="Default Changelist" comment="" />
-      <created>1595145888146</created>
+      <changelist id="2c930068-ec66-4c5b-b238-7bd5b8baeb98" name="Default Changelist" comment="" />
+      <created>1595146589361</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1595145888146</updated>
-      <workItem from="1595145892169" duration="233000" />
+      <updated>1595146589361</updated>
+      <workItem from="1595146591250" duration="3000" />
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
   </component>
 </project>
