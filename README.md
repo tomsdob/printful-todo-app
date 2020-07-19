@@ -26,7 +26,7 @@ $ npm run build:css
 $ php -S localhost:8000
 ```
 
-# or
+#### or
 
 ```bash
 $ npm run dev
